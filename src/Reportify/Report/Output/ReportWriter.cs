@@ -16,11 +16,27 @@ internal class ReportWriter : IReportWriter
       return;
     }
 
-    foreach (var dailySummary in outputData.DailySummaries)
+    var dailySummaries = outputData.DailySummaries.ToList();
+
+    foreach (var dailySummary in dailySummaries)
     {
       CreateHeaderInfos(dailySummary).ForEach(AnsiConsole.Write);
       AnsiConsole.Write(CreateTable(dailySummary));
     }
+
+    if (dailySummaries.Count > 1)
+    {
+      WriteWeeklySummary(dailySummaries);
+    }
+  }
+
+  private static void WriteWeeklySummary(List<DailySummary> dailySummaries)
+  {
+    var totalRoundedHours = dailySummaries.Sum(d => d.SumOfRoundedDurationsInHours);
+    var totalDuration = dailySummaries.Aggregate(TimeSpan.Zero, (sum, d) => sum + d.TotalDuration);
+
+    var markup = $"Weekly total: [bold]{totalRoundedHours:F2}h[/] [dim]({(int)totalDuration.TotalHours:D2}:{totalDuration.Minutes:D2})[/]";
+    AnsiConsole.Write(new Padder(new Rule(markup).LeftJustified(), new Padding(0, 1, 0, 0)));
   }
 
   private static Table CreateTable(DailySummary dailySummary)
