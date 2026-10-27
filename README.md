@@ -2,9 +2,9 @@
 
 # reportify
 
-[![CI](https://github.com/francWhite/reportify/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/francWhite/reportify/actions/workflows/ci.yml)
-[![GitHub release](https://img.shields.io/github/v/release/francWhite/reportify)](https://github.com/francWhite/reportify/releases)
-[![licence](https://img.shields.io/github/license/francWhite/reportify)](https://github.com/francWhite/reportify/blob/main/LICENSE)
+[![CI](https://github.com/kevinboss/reportify/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/kevinboss/reportify/actions/workflows/ci.yml)
+[![GitHub release](https://img.shields.io/github/v/release/kevinboss/reportify)](https://github.com/kevinboss/reportify/releases)
+[![licence](https://img.shields.io/github/license/kevinboss/reportify)](https://github.com/kevinboss/reportify/blob/main/LICENSE)
 
 reportify is a tool for generating reports based on tracked activities in [ManicTime](https://www.manictime.com/). It is designed to be used in conjunction with [Jira](https://www.atlassian.com/software/jira) to get the corresponding issue information, but can also be used without it.
 
@@ -28,7 +28,7 @@ reportify is a tool for generating reports based on tracked activities in [Manic
 
 ### Install manually
 
-Download the latest release from the [releases page](https://github.com/francWhite/reportify/releases) and extract the archive to a folder of your choice.
+Download the latest release from the [releases page](https://github.com/kevinboss/reportify/releases) and extract the archive to a folder of your choice.
 
 ## Usage
 
@@ -110,4 +110,4 @@ Everything after the % will be treated as a comment so `%This is my comment #REP
 
 ## License
 
-Distributed under the GPL-3.0 License. View [`LICENSE`](https://github.com/francWhite/reportify/blob/main/LICENSE) for more information.
+Distributed under the GPL-3.0 License. View [`LICENSE`](https://github.com/kevinboss/reportify/blob/main/LICENSE) for more information.
