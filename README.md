@@ -12,6 +12,7 @@ reportify is a tool for generating reports based on tracked activities in [Manic
 
 - [Installation](#installation)
 - [Usage](#usage)
+- [Credits](#credits)
 - [License](#license)
 
 ## Installation
@@ -107,6 +108,9 @@ If you want to add a comment to the tracked activity you can do so by adding it 
 
 Everything after the % will be treated as a comment so `%This is my comment #REP-228` will treat `This is my comment #REP-228` as the comment. Extracting the Jira issue will still work.
 
+## Credits
+
+reportify was created by [Francisco Metzger](https://github.com/francWhite) and is maintained by [@kevinboss](https://github.com/kevinboss).
 
 ## License
 
